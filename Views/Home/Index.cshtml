@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Biblioteca escolar</h1>
+    <p>Registro de autores, categorías, libros, estudiantes y préstamos.</p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-3 mt-3">
+    <div class="col">
+        <a class="btn btn-outline-primary w-100 py-3" asp-controller="Autores" asp-action="Index">Autores</a>
+    </div>
+    <div class="col">
+        <a class="btn btn-outline-primary w-100 py-3" asp-controller="Categorias" asp-action="Index">Categorías</a>
+    </div>
+    <div class="col">
+        <a class="btn btn-outline-primary w-100 py-3" asp-controller="Libros" asp-action="Index">Libros</a>
+    </div>
+    <div class="col">
+        <a class="btn btn-outline-primary w-100 py-3" asp-controller="Estudiantes" asp-action="Index">Estudiantes</a>
+    </div>
+    <div class="col">
+        <a class="btn btn-primary w-100 py-3" asp-controller="Prestamos" asp-action="Index">Préstamos</a>
+    </div>
+</div>
